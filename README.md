@@ -1,6 +1,6 @@
 # The Uncomfortable Narrative Website
 
-A Next.js + Tailwind website starter for *The Uncomfortable Narrative* podcast.
+A modern Next.js + Tailwind website for *The Uncomfortable Narrative* podcast.
 
 ## Run locally
 
@@ -11,8 +11,9 @@ npm run dev
 
 Then open http://localhost:3000.
 
-## Notes
+## What to update next
 
-- Update the Spotify link in `app/page.js`.
-- Replace placeholder host and social info in `/hosts` and `/socials` pages.
-- Contact form UI is in place and ready to connect to your preferred backend.
+- Spotify URL placeholder is `#spotify` in `app/page.js`.
+- Replace host bios in `app/hosts/page.js`.
+- Replace social handles and links in `app/socials/page.js`.
+- Connect the contact form UI in `app/contact/page.js` to your preferred backend.

@@ -13,8 +13,10 @@ export default function SocialsPage() {
   return (
     <section className="space-y-5">
       <h1 className="text-3xl font-bold">Our Socials</h1>
-      <p className="text-zinc-300">Follow us and join the conversation outside the episodes.</p>
-      <ul className="grid gap-3">
+      <p className="max-w-3xl text-zinc-300">
+        Stay connected between episodes. These channels share updates, clips, guest announcements, and research notes.
+      </p>
+      <ul className="grid gap-3 sm:grid-cols-2">
         {socials.map((social) => (
           <li key={social.name} className="rounded-lg border border-zinc-800 bg-brandCard p-4">
             <a href={social.link} className="font-medium text-brandAccent hover:underline">{social.name}</a>
