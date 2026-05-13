@@ -11,6 +11,15 @@ const links = [
 
 export default function Navbar() {
   return (
+    <header className="border-b border-zinc-800/90 bg-zinc-950/95 backdrop-blur">
+      <nav className="container-shell flex flex-col gap-4 py-4 sm:flex-row sm:items-center sm:justify-between" aria-label="Main navigation">
+        <Link href="/" className="flex items-center gap-3" aria-label="The Uncomfortable Narrative home">
+          <Image src="https://i.imgur.com/VWeCHXP.png" alt="The Uncomfortable Narrative logo" width={42} height={42} className="rounded" />
+          <span className="text-base font-semibold tracking-wide sm:text-lg">The Uncomfortable Narrative</span>
+        </Link>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm font-medium text-zinc-300">
+          {links.map((link) => (
+            <Link key={link.href} href={link.href} className="rounded px-1 py-1 transition hover:text-brandAccent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brandAccent">
     <header className="border-b border-zinc-800 bg-zinc-950/95 backdrop-blur">
       <nav className="container-shell flex flex-wrap items-center justify-between gap-4 py-4" aria-label="Main navigation">
         <Link href="/" className="flex items-center gap-3" aria-label="The Uncomfortable Narrative home">
